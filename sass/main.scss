@@ -1,0 +1,7 @@
+@use 'fonts';
+@use 'colors';
+@import "../node_modules/normalize-scss/sass/normalize";
+@import 'mixins';
+@import 'header/header';
+@import 'footer/footer';
+@import 'image';
