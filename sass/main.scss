@@ -2,17 +2,30 @@
 @use 'colors';
 @import "../node_modules/normalize-scss/sass/normalize";
 @import 'mixins';
-@import 'header/header';
-@import 'footer/footer';
 @import 'image';
 
 
 html,
 body {
     height: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
     content: "";
 }
+
+.row p{
+    width: 100%;
+}
+
+.card img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30vh;
+}
+
+// .btn-info{
+//     align-items:end;
+// }
