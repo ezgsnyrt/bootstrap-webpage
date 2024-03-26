@@ -3,4 +3,9 @@ body {
   height: 100%;
 }
 
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: "";
+}
+
 /*# sourceMappingURL=main.css.map */
