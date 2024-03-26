@@ -26,8 +26,7 @@ footer {
   background: black;
   padding: 2% 0;
 }
-
-.single-box p {
+footer .single-box p {
   color: white;
   line-height: 1.9;
 }
@@ -48,12 +47,6 @@ footer {
   background-color: #0BBCBA;
 }
 
-.single-box h2 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-}
-
 #basic-addon2 {
   background: #0BBCBA;
   color: white;
@@ -69,9 +62,9 @@ footer {
   margin-right: 15px;
   cursor: pointer;
 }
-
-.fab:hover {
-  background-color: #0BBCBA;
+.socials i i:hover {
+  background: black;
+  color: #77B3AE;
 }
 
 @media (max-width: 767px) {
