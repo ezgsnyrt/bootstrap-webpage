@@ -47,6 +47,10 @@ body .card-container .card .card-body {
   flex-direction: column;
   justify-content: space-between;
 }
+html .card-container .card .card-body .card-text,
+body .card-container .card .card-body .card-text {
+  text-align: justify;
+}
 html .card-container .card .card-body a:focus,
 body .card-container .card .card-body a:focus {
   color: #77B3AE;
@@ -103,6 +107,9 @@ body footer .socials i:hover {
 }
 
 @media (max-width: 767px) {
+  .mask h1 {
+    padding: 0 1rem 0 1rem;
+  }
   .single-box {
     margin-bottom: 50px;
   }

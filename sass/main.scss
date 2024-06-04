@@ -51,8 +51,12 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                & a:focus {
 
+                .card-text {
+                    text-align: justify;
+                }
+
+                & a:focus {
                     color: #77B3AE;
                     background: black;
                 }
@@ -90,7 +94,6 @@ body {
         }
 
     }
-
 }
 
 .single-box {
@@ -120,14 +123,12 @@ body {
 }
 
 
-
-
-
-
-
-
 // Responsive Design Styles
 @media (max-width: 767px) {
+    .mask h1 {
+        padding: 0 1rem 0 1rem;
+    }
+
 	.single-box {
 		margin-bottom: 50px;
 	}
