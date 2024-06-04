@@ -1,5 +1,4 @@
 @import "../node_modules/normalize-scss/sass/normalize";
-@import 'image';
 
 
 html,
@@ -9,69 +8,110 @@ body {
     box-sizing: border-box;
     margin:0;
     padding: 0;
-}
 
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
-    content: "";
-}
-
-.row p{
-    width: 100%;
-}
-
-.card img{
-    box-sizing: border-box;
-    width: 100%;
-    height: 30vh;
-}
-
-footer {
-	background: black;
-	padding: 2% 0;
-
-    .single-box p {
-        color: white;
-        line-height: 1.9;
+    .navbar-brand {
+        cursor: default;
     }
-}
 
-.single-box ul {
-	list-style: none;
-	padding: 0;
-}
-.single-box ul li a {
-	text-decoration: none;
-	color: white;
-	line-height: 2.5;
-	font-weight: 100;
-}
+    #navbarSupportedContent .nav-link {
+        &:hover {
+            background: #77B3AE;
+            color: black;
+        }
 
-.link li a:hover{
-    background-color:#0BBCBA;
-}
+        &:focus {
+            color: #77B3AE;
+            background: black;
+        }
+    }
 
-#basic-addon2 {
-	background: #0BBCBA;
-	color: white;
-    cursor:pointer;
-}
+    .button-submit {
+        &:focus {
+            color: #77B3AE;
+            background: black;
+        }
+    }
 
-.input-group:hover{
-    color:pink;
-}
+    .carousel-control-prev-icon::after,
+    .carousel-control-next-icon::after {
+        content: "";
+    }
 
-.socials i {
-	font-size: 20px;
-	margin-right: 15px;
-    cursor:pointer;
+    .card-container {
+        width: 100%;
 
-    i:hover{
+        .card  {
+            & img {
+                box-sizing: border-box;
+                width: 100%;
+                height: 30vh;
+            }
+
+            .card-body a {
+                &:focus {
+                    color: #77B3AE;
+                    background: black;
+                }
+            }
+        }
+    }
+
+    .row p{
+        width: 100%;
+    }
+
+    footer {
         background: black;
-        color: #77B3AE;
+        padding: 2% 0;
+
+        .single-box p {
+            color: white;
+            line-height: 1.9;
+        }
+
+        .socials i {
+            font-size: 20px;
+            margin-right: 15px;
+            cursor:pointer;
+
+            &:hover{
+                background: black;
+                color: #77B3AE;
+            }
+        }
+
+    }
+
+}
+
+.single-box {
+    & ul {
+        list-style: none;
+        padding: 0;
+
+        & li a {
+            text-decoration: none;
+            color: white;
+            line-height: 2.5;
+            font-weight: 100;
+
+            &:hover{
+                background-color:#0BBCBA;
+            }
+        }
+    }
+
+    .input-group {
+        #basic-addon2 {
+            background: #0BBCBA;
+            color: white;
+            cursor:pointer;
+        }
     }
 }
 
+
+// Responsive Design Styles
 @media (max-width: 767px) {
 	.single-box {
 		margin-bottom: 50px;

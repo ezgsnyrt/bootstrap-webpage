@@ -6,65 +6,89 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
+html .navbar-brand,
+body .navbar-brand {
+  cursor: default;
+}
+html #navbarSupportedContent .nav-link:hover,
+body #navbarSupportedContent .nav-link:hover {
+  background: #77B3AE;
+  color: black;
+}
+html #navbarSupportedContent .nav-link:focus,
+body #navbarSupportedContent .nav-link:focus {
+  color: #77B3AE;
+  background: black;
+}
+html .button-submit:focus,
+body .button-submit:focus {
+  color: #77B3AE;
+  background: black;
+}
+html .carousel-control-prev-icon::after,
+html .carousel-control-next-icon::after,
+body .carousel-control-prev-icon::after,
+body .carousel-control-next-icon::after {
   content: "";
 }
-
-.row p {
+html .card-container,
+body .card-container {
   width: 100%;
 }
-
-.card img {
+html .card-container .card img,
+body .card-container .card img {
   box-sizing: border-box;
   width: 100%;
   height: 30vh;
 }
-
-footer {
+html .card-container .card .card-body a:focus,
+body .card-container .card .card-body a:focus {
+  color: #77B3AE;
+  background: black;
+}
+html .row p,
+body .row p {
+  width: 100%;
+}
+html footer,
+body footer {
   background: black;
   padding: 2% 0;
 }
-footer .single-box p {
+html footer .single-box p,
+body footer .single-box p {
   color: white;
   line-height: 1.9;
+}
+html footer .socials i,
+body footer .socials i {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+html footer .socials i:hover,
+body footer .socials i:hover {
+  background: black;
+  color: #77B3AE;
 }
 
 .single-box ul {
   list-style: none;
   padding: 0;
 }
-
 .single-box ul li a {
   text-decoration: none;
   color: white;
   line-height: 2.5;
   font-weight: 100;
 }
-
-.link li a:hover {
+.single-box ul li a:hover {
   background-color: #0BBCBA;
 }
-
-#basic-addon2 {
+.single-box .input-group #basic-addon2 {
   background: #0BBCBA;
   color: white;
   cursor: pointer;
-}
-
-.input-group:hover {
-  color: pink;
-}
-
-.socials i {
-  font-size: 20px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-.socials i i:hover {
-  background: black;
-  color: #77B3AE;
 }
 
 @media (max-width: 767px) {
