@@ -47,10 +47,19 @@ body {
                 height: 30vh;
             }
 
-            .card-body a {
-                &:focus {
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                & a:focus {
+
                     color: #77B3AE;
                     background: black;
+                }
+
+                .detail-button {
+                    max-width: 50%;
+                    min-width:fit-content;
                 }
             }
         }
@@ -111,12 +120,19 @@ body {
 }
 
 
+
+
+
+
+
+
 // Responsive Design Styles
 @media (max-width: 767px) {
 	.single-box {
 		margin-bottom: 50px;
 	}
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.single-box {
 		margin-bottom: 50px;
